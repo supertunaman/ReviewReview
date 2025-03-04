@@ -1,0 +1,21 @@
+#---- Gambas files to ignore (v5)
+*.gambas
+.lock
+*~
+core
+core.*
+vgcore
+vgcore.*
+.kdbg*
+.*.prof
+.lang/*.pot
+.gambas/*
+.settings
+.startup
+.list
+.info
+#----
+#---- ReviewReview files
+*.swp
+blue*.html
+.gbc.stderr

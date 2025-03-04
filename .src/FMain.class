@@ -1,0 +1,14 @@
+' Gambas class file
+
+
+Public Sub btnImportFile_Click()
+
+  Dim diaFileDialog As Dialog
+  Dim sFileName As String
+  
+  If diaFileDialog.OpenFile(False) Then Return
+  sFileName = diaFileDialog.Path
+  
+  If sFileName <> Null Then FImporter.OpenWithFile(sFileName)
+
+End

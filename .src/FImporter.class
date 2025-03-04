@@ -1,0 +1,45 @@
+' Gambas class file
+
+
+Public Sub OpenWithFile(sFile As String)
+  
+  Me.ShowModal()
+  
+  ParseFile(sFile)
+  
+End
+
+Private Sub ParseFile(sFileName As String)
+  
+  Dim hDocument As HtmlDocument
+  Dim xNode As XmlElement
+  
+  hDocument = New HtmlDocument(sFileName)
+  xNode = hDocument.Root
+  
+  TraverseDOMTree(hNode)
+  
+End
+
+Private Sub TraverseDOMTree(xNode As XmlNode)
+
+  Dim xChild As XmlNode
+
+  If xNode = Null Then Return
+
+  ' Check the type of the node
+  ' If xNode.Type = XmlNode.ElementNode Then
+  '   Print "Element Node Name:"; xNode.Name
+  ' Else If xNode.Type = XmlNode.TextNode Then
+  '   Print "Text Node Value:"; xNode.Value
+  ' Endif
+
+  ' Loop through child nodes
+  Try xChild = xNode.Children[0]
+  If Not Error Then
+    While xChild <> Null
+      TraverseDOMTree(xChild)
+      xChild = xChild.NextSibling
+    Wend
+  Endif 
+End

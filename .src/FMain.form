@@ -1,0 +1,40 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,117,76)
+  { TreeView1 TreeView
+    MoveScaled(1,6,79,29)
+  }
+  { btnImportFile Button
+    MoveScaled(1,1,16,4)
+    Text = ("Import File")
+  }
+  { lblRating Label
+    MoveScaled(97,36,17,4)
+    Text = ("⭐️⭐️⭐️⭐️⭐️")
+  }
+  { Label1 Label
+    MoveScaled(87,36,9,4)
+    Text = ("Rating")
+  }
+  { lblPrice LCDLabel
+    MoveScaled(91,6,25,6)
+    Text = ("0.99")
+    Alignment = Align.Right
+  }
+  { picProduct PictureBox
+    MoveScaled(82,6,7,6)
+  }
+  { txtProduct TextArea
+    MoveScaled(81,12,33,23)
+  }
+  { picReviewer PictureBox
+    MoveScaled(1,37,6,6)
+  }
+  { lblReviewTitle Label
+    MoveScaled(8,36,75,6)
+  }
+  { txtReview TextArea
+    MoveScaled(3,45,110,28)
+  }
+}
