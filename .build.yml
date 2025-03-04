@@ -1,4 +1,4 @@
-image: ubuntu/noble
+image: ubuntu/jammy
 packages:
   - gambas3-devel
   - gambas3-gb-db
