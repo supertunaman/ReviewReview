@@ -1,0 +1,21 @@
+image: ubuntu/noble
+packages:
+  - gambas3-devel
+  - gambas3-gb-db
+  - gambas3-gb-db-sqlite3
+  - gambas3-gb-form
+  - gambas3-gb-gui
+  - gambas3-gb-image
+  - gambas3-gb-net
+  - gambas3-gb-net-curl
+  - gambas3-gb-xml
+  - gambas3-gb-xml-html
+tasks:
+  - build: |
+      cd ReviewReview
+      gbc3 -a
+  - archive: |
+      cd ReviewReview
+      gba3
+artifacts:
+  - ReviewReview/ReviewReview.gambas
