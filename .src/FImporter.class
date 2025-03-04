@@ -17,7 +17,7 @@ Private Sub ParseFile(sFileName As String)
   hDocument = New HtmlDocument(sFileName)
   xNode = hDocument.Root
   
-  TraverseDOMTree(hNode)
+  TraverseDOMTree(xNode)
   
 End
 

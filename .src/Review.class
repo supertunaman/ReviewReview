@@ -1,3 +1,5 @@
 ' Gambas class file
 
-Public 
+Public sCustomerId As String
+Public sTitle As String
+Public sBody As String
